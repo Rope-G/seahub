@@ -396,6 +396,7 @@ define([
 
         uploadLinkPanelInit: function() {
             var _this = this;
+            _this.$('.loading-tip').hide();
             var after_op_success = function(data) { // data is [] or [{...}]
                 if (data.length == 1) {
                     var link_data = data[0],
